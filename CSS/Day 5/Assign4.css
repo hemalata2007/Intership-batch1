@@ -1,0 +1,61 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main mood box */
+.mood-box {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+
+/* Mood message using ::after */
+.mood-box::after {
+  content: "Feeling Cool 😎";
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  transition: content 0.3s ease, color 0.3s ease;
+}
+
+/* Tablet screen */
+@media (max-width: 900px) {
+  .mood-box {
+    background-color: #f1c40f;
+  }
+
+  .mood-box::after {
+    content: "Feeling Sunny ☀️";
+    color: #333;
+  }
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+  .mood-box {
+    background-color: #e74c3c;
+  }
+
+  .mood-box::after {
+    content: "Feeling Warm ❤️";
+    color: #fff;
+  }
+}

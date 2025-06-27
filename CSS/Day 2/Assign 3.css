@@ -1,0 +1,56 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  padding: 40px;
+  color: #333;
+}
+
+/* Parent Styles (inherited by children) */
+.parent {
+  font-size: 18px;
+  color: #4b0082;
+  border: 4px dashed #4b0082; /* Not inherited */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Highlight span */
+span {
+  font-weight: bold;
+  background-color: #f0e68c;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+/* Note Box */
+.note {
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-left: 5px solid #4b0082;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}

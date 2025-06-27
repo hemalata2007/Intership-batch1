@@ -1,0 +1,29 @@
+body{  
+    background-image:url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rocket{
+    font-size: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    animation: launch 3s infinite;
+    animation-play-state: running;
+    cursor: pointer;
+}
+
+.rocket:active{
+    animation-play-state: running;
+}
+
+@keyframes launch{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-500px);
+    }
+}

@@ -1,0 +1,62 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Common item styling */
+.item {
+  font-size: 40px;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  font-weight: bold;
+  color: white;
+  display: none; /* hide all by default */
+}
+
+/* Individual item colors */
+.hat {
+  background-color: #ff6f61;
+}
+
+.scarf {
+  background-color: #6a1b9a;
+}
+
+.sunglasses {
+  background-color: #2c3e50;
+}
+
+/* Hover effect */
+.item:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries to show only one at a time */
+@media (min-width: 901px) {
+  .hat { display: block; }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .scarf { display: block; }
+}
+
+@media (max-width: 600px) {
+  .sunglasses { display: block; }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inline vs Block Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+ 
+    .inline-elements span,
+    .inline-elements a,
+    .inline-elements strong {
+      border: 2px solid #3498db;
+      padding: 5px 8px;
+      margin-right: 10px;
+      color: #2980b9;
+    }
+
+    .block-elements div,
+    .block-elements p,
+    .block-elements h1 {
+      border: 2px solid #e74c3c;
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #fdecea;
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Inline and Block-Level Elements</h2>
+
+  <section class="inline-elements">
+    <h3>Inline Elements</h3>
+    <span>Span</span>
+    <a href="#">Anchor</a>
+    <strong>Strong</strong>
+  </section>
+
+  <section class="block-elements">
+    <h3>Block Elements</h3>
+    <div>Div Element</div>
+    <p>Paragraph Element</p>
+    <h1>Heading 1 Element</h1>
+  </section>
+
+</body>
+</html>

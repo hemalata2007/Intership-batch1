@@ -1,0 +1,36 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+
+.gradeA {
+  background-color: #d4edda; /* light green */
+  padding: 8px;
+  margin: 5px 0;
+  border-left: 4px solid green;
+}
+
+.gradeB {
+  background-color: #fff3cd; /* light yellow */
+  padding: 8px;
+  margin: 5px 0;
+  border-left: 4px solid orange;
+}
+
+
+input[type="text"] {
+  border: 1px solid #007BFF;
+  padding: 6px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="email"] {
+  border: 1px dashed #28a745;
+  padding: 6px;
+  margin-bottom: 10px;
+  display: block;
+}

@@ -1,0 +1,147 @@
+body {
+  background: linear-gradient(to bottom, #0d0d1a, #1a1a40);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transition: all 1s ease;
+}
+
+/* Ears */
+.ear {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* Head */
+.head {
+  width: 150px;
+  height: 120px;
+  background: white;
+  border-radius: 40px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  box-shadow: 0 0 10px #00f0ff;
+  z-index: 1;
+}
+
+/* Face */
+.face {
+  width: 90px;
+  height: 60px;
+  background: #1a1a40;
+  border-radius: 15px;
+  margin: 25px auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.eyes {
+  width: 60px;
+  height: 10px;
+  background: #00f0ff;
+  border-radius: 5px;
+  margin: 0 auto 10px;
+}
+
+.mouth {
+  width: 30px;
+  height: 5px;
+  background: pink;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+/* Body */
+.body {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  top: -10px;
+  margin: 0 auto;
+}
+
+/* Arms */
+.arm {
+  width: 30px;
+  height: 70px;
+  background: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 150px;
+}
+
+.arm.left {
+  left: -20px;
+}
+
+.arm.right {
+  right: -20px;
+}
+
+/* Legs */
+.leg {
+  width: 25px;
+  height: 60px;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.leg.left {
+  left: 40px;
+}
+
+.leg.right {
+  right: 40px;
+}
+
+/* 📱 Responsive Transforming Effect */
+@media (max-width: 600px) {
+  .robot {
+    transform: rotate(90deg) scale(0.8);
+  }
+
+  .arm.left {
+    transform: translateX(-50px) rotate(45deg);
+  }
+
+  .arm.right {
+    transform: translateX(50px) rotate(-45deg);
+  }
+
+  .leg.left {
+    transform: translateY(30px) rotate(-20deg);
+  }
+
+  .leg.right {
+    transform: translateY(30px) rotate(20deg);
+  }
+
+  .head {
+    transform: rotate(-15deg);
+  }
+}

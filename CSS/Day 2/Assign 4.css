@@ -1,0 +1,55 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  padding: 40px;
+  color: #333;
+}
+
+/* Main content box */
+.content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+/* Text alignments */
+.left {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.right {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.justify {
+  text-align: justify;
+  margin-bottom: 25px;
+  color: #4b0082;
+}
+
+/* Note box */
+.note {
+  background: #ffffffcc;
+  padding: 20px;
+  border-left: 5px solid #4b0082;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}

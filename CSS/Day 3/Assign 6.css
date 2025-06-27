@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f4f6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.power-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.power-btn:hover {
+  background-color: #ff1744;
+  transform: scale(1.1) rotate(360deg);
+  font-size: 1.3rem;
+}

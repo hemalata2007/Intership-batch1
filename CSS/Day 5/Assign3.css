@@ -1,0 +1,68 @@
+/* Background setup */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quote Frame */
+.frame {
+  background: #fff;
+  border: 8px double #4b0082;
+  border-radius: 20px;
+  padding: 40px 60px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.quote {
+  font-size: 32px;
+  color: #4b0082;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.author {
+  font-size: 20px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Medium screen (Tablet) */
+@media (max-width: 768px) {
+  .frame {
+    padding: 30px 40px;
+  }
+
+  .quote {
+    font-size: 26px;
+  }
+
+  .author {
+    font-size: 18px;
+  }
+}
+
+/* Small screen (Mobile) */
+@media (max-width: 480px) {
+  .frame {
+    padding: 20px 25px;
+    border-width: 5px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .author {
+    font-size: 16px;
+  }
+}

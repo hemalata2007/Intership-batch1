@@ -1,0 +1,22 @@
+.pizza-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffe0b2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.pizza-menu a {
+  text-decoration: none;
+  color: #8b0000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.pizza-menu a:hover {
+  transform: scale(1.1);
+  color: #d32f2f;
+}

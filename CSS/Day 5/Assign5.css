@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  width: 30%;
+  padding: 30px;
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  background-color: #27ae60;
+}
+
+/* Tablet layout - 2 items per row */
+@media (max-width: 1024px) {
+  .item {
+    width: 45%;
+  }
+}
+
+/* Mobile layout - 1 item per row */
+@media (max-width: 767px) {
+  .item {
+    width: 100%;
+  }
+}

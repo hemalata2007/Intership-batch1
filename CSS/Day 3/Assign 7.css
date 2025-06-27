@@ -1,0 +1,37 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.candy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.candy-list li {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  color: #333;
+}
+
+
+.candy-list li:first-child {
+  color: #d63384;
+  font-weight: bold;
+  background-color: #ffe5ec;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.candy-list li:first-child::before {
+  content: "🍬 ";
+}

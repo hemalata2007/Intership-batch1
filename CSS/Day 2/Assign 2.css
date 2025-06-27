@@ -1,0 +1,42 @@
+/* 🔁 CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 👇 Custom Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  padding: 40px;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #4b0082;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Note box */
+.note {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 6px solid #4b0082;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
