@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MET Bhujbal Knowledge City ID Card</title>
+  <script src="identity2.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+    .id-card {
+      width: 300px;
+      height: 450px;
+      background: white;
+      border: 3px solid #004080;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px #888;
+      margin: auto;
+      text-align: center;
+    }
+    .college-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+    .logo {
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    .photo {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      border: 2px solid #004080;
+      margin: 10px auto;
+    }
+    .details {
+      margin-top: 10px;
+      text-align: left;
+    }
+    .details strong {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="id-card">
+    <img src="met.jpg" class="logo" alt="College Logo">
+    <div class="college-name">MET Bhujbal Knowledge City</div>
+    <div class="college-name" style="font-size:13px;">Adgaon, Nashik</div>
+    <img src="sanu.webp" alt="Student Photo" class="photo" id="photo">
+    <div class="details">
+      <p><strong>Name:</strong> <span id="name">Hemalata Chaure</span></p>
+      <p><strong>ID No:</strong> <span id="idno">MET123456</span></p>
+      <p><strong>Course:</strong> <span id="course">Full Stack Development</span></p>
+      <p><strong>Valid Till:</strong> <span id="validity">Dec 2025</span></p>
+    </div>
+  </div>
+</body>
+</html>
